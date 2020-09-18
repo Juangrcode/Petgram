@@ -5,10 +5,7 @@ import { Layout } from "../components/Layout";
 
 const HomePage = ({ id }) => {
   return (
-    <Layout
-      title={"Tu app de fotos de mascotas"}
-      subtitle="Con Petgram puedes encontrar fotos de animales domesticos muy bonitos"
-    >
+    <Layout>
       <ListOfCategories />
       <ListOfPhotoCards categoryId={id} />
     </Layout>

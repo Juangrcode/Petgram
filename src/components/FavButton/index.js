@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import PropTypes from "prop-types";
 import { Button } from "./styles";
 
 export const FavButton = ({ liked, likes, onClick }) => {
@@ -11,4 +12,10 @@ export const FavButton = ({ liked, likes, onClick }) => {
       {likes} likes!
     </Button>
   );
+};
+
+FavButton.propTypes = {
+  liked: PropTypes.bool,
+  likes: PropTypes.number,
+  onClick: PropTypes.func,
 };
