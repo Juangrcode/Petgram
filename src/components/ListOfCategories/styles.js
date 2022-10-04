@@ -10,7 +10,7 @@ export const List = styled.ul`
       border-radius: 60px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       left: 0;
-      margin: 0 auto;
+      margin: 20 auto;
       max-width: 400px;
       padding: 5px;
       position: fixed;
@@ -18,9 +18,11 @@ export const List = styled.ul`
       top: -20px;
       transform: scale(0.5);
       z-index: 1;
+      margin-botom: 20px;
     `}
 `;
 
 export const Item = styled.li`
   padding: 0 8px;
+  margin-botom: 20px;
 `;

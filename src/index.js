@@ -6,7 +6,10 @@ import Context from "./Context";
 import App from "./App";
 
 const client = new ApolloClient({
-  uri: "https://petgram-server-jrmfsd-okxluew9o.now.sh/graphql",
+  uri: "https://petgram-server-ricrdomedina.vercel.app/graphql",
+  headers: {
+    "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+  },
   request: (operation) => {
     const token = window.sessionStorage.getItem("token");
     const authorization = token ? `Bearer ${token}` : "";
